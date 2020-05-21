@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Favorite Movie</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+        // favorite movies array
+        var Movies = ["dark kinght rises","good fellas","training day","friday"];
+        
+        // favorite places to travel array
+        var travel = ["japan","spain","portugal","italy"]
 
+        // favorite movie prompt
+        var favoriteMoive = prompt( "what is your favorite Moive?");
+
+        // favorite place to travel prompt
+        var favoriteTravel = prompt( "what is your favorite place to travel?");
+
+        // convert movies and travel strings to lower case
+        var favoriteMoive = favoriteMoive.toLowerCase();
+        var favoriteTravel = favoriteTravel.toLowerCase();
+
+        // alert for movies with .index
+        if (Movies.indexOf(favoriteMoive) === -1) {
+            alert("Nah. I haven't seen that movie");
+        } else {
+            alert("I love that movie!");
+        }
+
+        // alert for tavel with. index
+        if (travel.indexOf(favoriteTravel) === -1) {
+            alert("yea thats one of my favorite places!");
+        } else {
+            alert("oh i love that place!");
+        }
+        
+
+    
+    
+        
+        </script>
+    </body>
+</html>
